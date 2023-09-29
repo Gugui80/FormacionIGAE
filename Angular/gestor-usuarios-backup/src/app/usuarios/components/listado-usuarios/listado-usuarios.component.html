@@ -1,0 +1,10 @@
+<h3>Listado de usuarios</h3>
+<div *ngIf="! usuarios.length">Ningún usuario registrado por el momento</div>
+<div>
+    <article *ngFor="let usuario of usuarios">
+        <span>{{usuario.nombre}}</span>
+        <span>{{usuario.dni}}</span>
+        <span>{{usuario.direccion}}</span> 
+        <span>{{usuario.tipo}}</span>
+    </article>
+</div>
